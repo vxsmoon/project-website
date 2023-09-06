@@ -1,0 +1,101 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: #ff0000;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+header {
+    background-color: #F4DDB4;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 300px;
+    text-align: center;
+}
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+}
+
+.container img {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 36px;
+    color: lightgoldenrodyellow;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 2.5;
+    color: dimgray;
+}
+
+.portfolio-item {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-item {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact {
+    max-width: 50%;
+    height: 50%;
+}

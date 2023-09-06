@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Michaella Bungalso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <img src="welcome.png" alt="welcome">
+            <p>Delighted to have you here! I'm Michaella, often known as Ella, Mikay, Kyo, or Shao. I'm currently studying at Our Lady Of Fatima University under Bachelor of Science in Information Technology 3rd Year.</p>
+            <img src="profile.png" alt="profile">
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <h1>Project Proposal</h1>
+            <div class="project-item">
+                <img src="cat1.png" alt="Project 1">
+                <h2>Online Learning Platform for a Niche Skill:</h2>
+                <p>Make an online learning platform that focuses on teaching a specific skill or subject. This could be anything from a particular programming language to a one-of-a-kind craft or a lesser-known language. Your group can create a website or app with video tutorials, interactive quizzes, forums, and a certification system. Consider adding services such as live webinars, peer reviews, and a marketplace where you may sell relevant resources.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="cat2.png" alt="Project 2">
+                <h2>Community Sustainability Dashboard:</h2>
+                <p>Create a website that helps groups or neighborhoods to monitor and enhance their sustainability efforts. Energy usage monitoring, trash reduction targets, carbon footprint tracking, and community challenges might all be included in this dashboard. Users can enter information about their sustainable behaviors, and the platform may provide insights, recommendations, and leaderboards to stimulate friendly competition.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="cat3.png" alt="Project 2">
+                <h2>Health and Wellness App with AI Coach:</h2>
+                <p>Create an artificial intelligence (AI)-powered health and wellness app that combines data tracking with individualized coaching. Users can enter their personal health measurements, exercise routines, dietary preferences, and sleeping patterns. The software analyzes data using AI to deliver personalised recommendations, workout routines, nutrition choices, and sleep guidance. Consider using data from wearable devices for more accurate tracking.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <div class="portfolio-item">
+                <img src="sunoo.png" alt="Project 1">
+                <h2>Activity No. 1</h2>
+                <p>Description of Activity No. 1.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="star.png" alt="Project 2">
+                <h2>Activity No. 2</h2>
+                <p>Description of Activity No. 2.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="lino.png" alt="Project 2">
+                <h2>Activity No. 3</h2>
+                <p>Description of Activity No. 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <img src="https.png" alt="gmail">
+            <h1>Contact Me</h1>
+            <p>Email: mvbungalso4106pam@student.fatima.edu.ph</p>
+        </div>
+    </section>
+    
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth' // This triggers smooth scrolling
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
